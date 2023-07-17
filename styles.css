@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+  background: #000025;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #2d274c; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d274c; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ba68c8; 
+}
+::-webkit-scrollbar-track-piece{
+  background: #000025 ;
+}
+.highlighted-text{
+  color: #ba68c8;
+  font-weight: bold;
+}
+.nav-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  backdrop-filter: blur(15px);
+}
+.nav-navbar-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0% 10% 0% 10%;
+  padding: 15px;
+  color: #fff;
+}
+.nav-container-home{
+  font-size: 25pt;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.nav-container-menu{
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+.nav-container-menu-item{
+  font-size: 20pt;
+  font-weight: lighter;
+}
+.home-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  height: 100vh;
+}
+.home-container-info{
+  margin-left: 10%;
+}
+.home-info-itens{
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+.home-image{
+  margin-right: 10%;
+  width: 40%;
+}
+.home-contact-btn{
+  padding: 10px 25px 10px 25px;
+  font-size: 15pt;
+  color: #ba68c8;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: #ead1ee;
+}
+.about{
+  padding: 10px;
+  margin: 0 5% 0% 5%;
+}
+.section-container-title{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px 50px 0px;
+}
+.section-title{
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+.about-container-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+.about-image{
+  width: 50%;
+}
+.about-container-text{
+  margin-right: 10px;
+}
+.about-text{
+  font-size: 2em;
+  padding: 10px;
+  color: #fff;
+  text-align: justify;
+}
+.skills{
+  padding: 20px;
+  margin: 0 10% 0 10%;
+}
+.skill-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.skills-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-grow: 5;
+  max-width: 70%;
+}
+.skill-img{
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ead1ee;
+  background-color: #2d274c;
+  max-width: 144px;
+  max-height: 144px;
+  transition: box-shadow 0.3s;
+}
+.skill-img:hover{
+  box-shadow: 0 0 20px #ead1ee;
+}
+.content-tooltips {
+  position: relative;
+}
+.tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 10%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltip-text::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -5px;
+}
+.content-tooltips:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+.projects{
+  padding: 20px;
+  margin: 0 10% 0 10%;
+}
+.project-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.projects-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 30px;
+  flex-grow: 5;
+  max-width: 80%;
+}
+.project{
+  background-color: #ead1ee;
+  color: #2d274c;
+  padding: 10px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+}
+.project:hover{
+  box-shadow: 0 0 20px #ead1ee;
+}
+.project-img{
+  max-width: 400px;
+  max-height: 200px;
+  border-radius: 10px;
+}
+.project-description-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.github-link{
+  cursor: pointer;
+}
