@@ -228,6 +228,7 @@ body{
   align-items: center;
   justify-content: center;
   max-width: 100%;
+  margin-bottom: 30px;
 }
 .projects-container{
   display: flex;
@@ -299,6 +300,9 @@ body{
   cursor: pointer;
   gap: 5px;
 }
+.project-link:hover{
+  color: #ba68c8;
+}
 .github-link{
   font-size: 1.2rem;
   font-weight: 500;
@@ -356,4 +360,13 @@ body{
   background-color: #2d274c;
   color: #fff;
   border-radius: 10px;
+}
+.footer-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  padding: 30px;
+  font-size: 1rem;
 }
