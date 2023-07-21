@@ -11,13 +11,24 @@
   <header id="navbar">
     <div class="nav-container">
       <div class="nav-navbar-container">
-        <a class="nav-container-home highlighted-text">LUIS</a>
+        <a class="nav-container-home highlighted-text">LuisFs</a>
         <nav class="nav-container-menu">
-          <a class="nav-container-menu-item">SOBRE</a>
-          <a class="nav-container-menu-item">HABILIDADES</a>
-          <a class="nav-container-menu-item">PROJETOS</a>
-          <a class="nav-container-menu-item">CONTATO</a>
+          <a class="nav-container-menu-item">Sobre</a>
+          <a class="nav-container-menu-item">Habilidades</a>
+          <a class="nav-container-menu-item">Projetos</a>
+          <a class="nav-container-menu-item">Contato</a>
         </nav>
+        <div class="nav-mobile-menu-icon">
+          <button onclick="mobileMenu()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+      <div class="nav-mobile-menu">
+        <div class="nav-mobile-menu-list">
+          <a class="nav-container-menu-item">Sobre</a>
+          <a class="nav-container-menu-item">Habilidades</a>
+          <a class="nav-container-menu-item">Projetos</a>
+          <a class="nav-container-menu-item">Contato</a>
+        </div>
       </div>
     </div>
   </header>
@@ -25,9 +36,9 @@
     <section id="home">
       <div class="home-container">
         <div class='home-container-info'>
-          <h3 class="home-info-itens">OLÁ,</h3>
-          <h1 class="home-info-itens">MEU NOME É <span class='highlighted-text'>LUIS FERNANDO</span></h1>
-          <h3 class="home-info-itens">SOFTWARE DEVELOPER</h3>
+          <h3 class="home-info-itens">Olá,</h3>
+          <h1 class="home-info-itens">Meu nome é <span class='highlighted-text'>Luis Fernando</span></h1>
+          <h3 class="home-info-itens">Software Developer</h3>
           <button class="home-contact-btn">Contato</button>
         </div>
         <img class="home-image" src="./assets/programmer.svg" alt="imagem inicial"/>
@@ -163,11 +174,11 @@
           <form class="form-contact">
             <div class="field">
               <label for="input-name" class="label">Nome</label>
-              <input id="input-name" type="text" class="input">
+              <input id="input-name" type="text" class="input" placeholder="Informe o seu nome">
             </div>
             <div class="field">
               <label for="input-email" class="label">Email</label>
-              <input id="input-email" type="text" class="input">
+              <input id="input-email" type="email" class="input" placeholder="Informe seu email">
             </div>
             <div class="field">
               <label for="input-textarea" class="label">Mensagem</label>
@@ -184,5 +195,7 @@
       <span>© Copyright 2023, Luis F. Savighago. Todos os direitos reservados.</span>
     </div>
   </footer>
+
+  <script src="./index.js"></script>
 </body>
 </html>
