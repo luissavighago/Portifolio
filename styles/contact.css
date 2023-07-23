@@ -1,0 +1,105 @@
+.contact{
+  padding: 20px;
+  margin: 0 10% 0 10%;
+}
+.contact-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  width: 100%;
+}
+.form-contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  background-color: var(--color-07);
+  box-shadow: 1px 1px 10px #e0e0e0;
+  padding: 50px;
+  border-radius: 10px;
+}
+.form-contact:hover{
+  box-shadow: 0 0 20px var(--color-04);
+}
+.field{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.label{
+  color: var(--color-02);
+  font-size: 18pt;
+  margin-bottom: 5px;
+  margin-left: 3px;
+}
+.input{
+  padding: 10px;
+  border: 1px solid var(--color-02);
+  border-radius: 10px;
+  background-color: var(--color-06);
+  font-size: 15pt;
+  color: var(--color-02);
+}
+.input-textarea{
+  resize: none;
+  overflow: hidden;
+}
+.btn-submit{
+  padding: 8px 40px;
+  font-size: 15pt;
+  background-color: var(--color-02);
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+@media all and (max-width:1200px){
+  .contact{
+    margin: 0 5% 0 5%;
+  }
+  .form-contact{
+    width: 80%;
+  }
+}
+@media all and (max-width:830px){
+  .form-contact{
+    width: 100%;
+  }
+}
+@media all and (max-width:550px){
+  .contact{
+    padding: 10px;
+    margin: 0%;
+  }
+  .btn-submit{
+    margin-top: 2px;
+  }
+  .form-contact{
+    padding: 30px;
+  }
+  .label{
+    color: var(--color-02);
+    font-size: 15pt;
+  }
+  .input{
+    padding: 10px;
+    font-size: 10pt;
+  }
+  .contact-container{
+    margin-bottom: 50px;
+  }
+}
+@media all and (max-width:330px){
+  .form-contact{
+    padding: 20px;
+  }
+  .btn-submit{
+    padding: 8px 20px;
+  }
+}

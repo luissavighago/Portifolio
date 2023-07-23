@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./styles/about.css">
   <link rel="stylesheet" href="./styles/skills.css">
   <link rel="stylesheet" href="./styles/projects.css">
+  <link rel="stylesheet" href="./styles/contact.css">
   <link rel="stylesheet" href="/public/fontawesome/css/all.min.css">
 </head>
   <header id="navbar">
@@ -179,15 +180,15 @@
           <form class="form-contact">
             <div class="field">
               <label for="input-name" class="label">Nome</label>
-              <input id="input-name" type="text" class="input" placeholder="Informe o seu nome">
+              <input id="input-name" type="text" class="input" placeholder="Informe o seu nome" required>
             </div>
             <div class="field">
               <label for="input-email" class="label">Email</label>
-              <input id="input-email" type="email" class="input" placeholder="Informe seu email">
+              <input id="input-email" type="email" class="input" placeholder="Informe seu email" required>
             </div>
             <div class="field">
               <label for="input-textarea" class="label">Mensagem</label>
-              <textarea id="input-textarea" type="text" class="input"></textarea>
+              <textarea id="input-textarea" type="text" rows="4" cols="50" class="input input-textarea"></textarea>
             </div>
             <button type="submit" class="btn-submit">Enviar</button>
           </form>

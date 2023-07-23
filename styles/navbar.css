@@ -4,7 +4,6 @@
   left: 0;
   margin: auto;
   width: 100%;
-  backdrop-filter: blur(15px);
 }
 .nav-navbar-container{
   display: flex;
@@ -29,10 +28,10 @@
   font-size: 20pt;
   font-weight: lighter;
 }
-.nav-mobile-menu-icon{
+.nav-mobile-menu{
   display: none;
 }
-.nav-mobile-menu{
+.nav-mobile-menu-icon{
   display: none;
 }
 .nav-mobile-menu:disabled{
@@ -74,5 +73,6 @@
     color: #fff;
     padding: 10px;
     margin-bottom: 10px;
+    backdrop-filter: blur(15px);
   }
 }
