@@ -6,3 +6,10 @@ const mobileMenu = () => {
     menu.classList.add("open");
   }
 }
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}

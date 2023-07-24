@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./styles/skills.css">
   <link rel="stylesheet" href="./styles/projects.css">
   <link rel="stylesheet" href="./styles/contact.css">
+  <link rel="stylesheet" href="./styles/footer.css">
   <link rel="stylesheet" href="/public/fontawesome/css/all.min.css">
 </head>
   <header id="navbar">
@@ -45,7 +46,7 @@
           <h3 class="home-info-itens">Olá,</h3>
           <h3 class="home-info-itens">Meu nome é <span class='highlighted-text'>Luis Fernando</span></h3>
           <h3 class="home-info-itens">Software Developer</h3>
-          <button class="home-contact-btn">Contato</button>
+          <a class="home-contact-btn" href="/#contact">Contato</a>
         </div>
         <img class="home-image" src="./assets/programmer.svg" alt="imagem inicial"/>
       </div>
@@ -194,11 +195,22 @@
           </form>
         </div>
       </div>
+      <div class="back-to-top-container content-style2">
+        <div class="back-to-top" onclick="scrollToTop()">
+          <i class="fa fa-arrow-up"></i>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer-container">
-      <span>© Copyright 2023, Luis F. Savighago. Todos os direitos reservados.</span>
+      <div class="footer-links">
+        <a><i class="fa-brands fa-github fa-lg"></i></a>
+        <a><i class="fa-brands fa-linkedin fa-lg"></i></a>
+        <a><i class="fa-brands fa-instagram fa-lg"></i></a>
+        <a><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+      </div>
+      <span>©2023 Copyright, Luis F. Savighago.</span>
     </div>
   </footer>
 

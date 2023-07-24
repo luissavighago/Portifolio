@@ -24,19 +24,20 @@
   font-weight: bold;
   cursor: pointer;
   border-radius: 10px;
-  background-color: var(--color-06);
-  border: none;
-  transition: all 400ms ease;
+  background-color: var(--color-01);
+  border:none;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  box-shadow: 0 0 40px 40px var(--color-07) inset, 0 0 0 0 var(--color-07);
 }
-.home-contact-btn:hover{
-  background-color: var(--color-04);
+.home-contact-btn:hover {
+  box-shadow: 0 0 10px 0 var(--color-07) inset, 0 0 10px 4px var(--color-07);
+  color: #fff;
 }
 .home-contact-btn:active {
-  border: 1px solid var(--color-03);
-  background-color: var(--color-03);
-  color: #22272b;
+  background-color: var(--color-02);
+  box-shadow: 0 0 10px 0 var(--color-04) inset, 0 0 10px 4px var(--color-04);
 }
-
 @media all and (max-width:1300px){
   .home-container-info{
     margin-left: 10%;

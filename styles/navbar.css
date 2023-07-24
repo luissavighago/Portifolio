@@ -28,6 +28,9 @@
   font-size: 20pt;
   font-weight: lighter;
 }
+.nav-container-menu-item:hover{
+  color: var(--color-03);
+}
 .nav-mobile-menu{
   display: none;
 }

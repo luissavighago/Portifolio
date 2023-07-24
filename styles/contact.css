@@ -7,7 +7,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   width: 100%;
 }
 .form-contact{
@@ -57,6 +57,31 @@
   color: #fff;
   border-radius: 10px;
   margin-top: 5px;
+}
+.back-to-top-container {
+  position: relative;
+  padding-bottom: 60px;
+}
+.back-to-top {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-01);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+.back-to-top:hover {
+  background-color: transparent;
+  color: #000;
+  border: 3px solid #000;
+  box-shadow: 0 0 30px var(--color-04);
 }
 
 @media all and (max-width:1200px){
