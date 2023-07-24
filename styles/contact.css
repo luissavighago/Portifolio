@@ -53,10 +53,23 @@
 .btn-submit{
   padding: 8px 40px;
   font-size: 15pt;
-  background-color: var(--color-02);
+  background-color: transparent;
   color: #fff;
   border-radius: 10px;
   margin-top: 5px;
+  border: none;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  box-shadow: 0 0 40px 40px var(--color-01) inset, 0 0 0 0 var(--color-01);
+}
+.btn-submit:hover {
+  background-color: transparent;
+  color: var(--color-01);
+  box-shadow: 0 0 10px 0 var(--color-01) inset, 0 0 10px 4px var(--color-01);
+}
+.btn-submit:active {
+  background-color: var(--color-05);
+  box-shadow: 0 0 10px 0 var(--color-04) inset, 0 0 10px 4px var(--color-04);
 }
 .back-to-top-container {
   position: relative;
@@ -68,20 +81,26 @@
   right: 20px;
   width: 50px;
   height: 50px;
-  background-color: var(--color-01);
-  color: #fff;
+  background-color: transparent;
+  color: var(--color-07);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 24px;
   cursor: pointer;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  box-shadow: 0 0 40px 40px var(--color-01) inset, 0 0 0 0 var(--color-01);
 }
 .back-to-top:hover {
   background-color: transparent;
-  color: #000;
-  border: 3px solid #000;
-  box-shadow: 0 0 30px var(--color-04);
+  color: var(--color-01);
+  box-shadow: 0 0 10px 0 var(--color-01) inset, 0 0 10px 4px var(--color-01);
+}
+.back-to-top:active {
+  background-color: var(--color-05);
+  box-shadow: 0 0 10px 0 var(--color-04) inset, 0 0 10px 4px var(--color-04);
 }
 
 @media all and (max-width:1200px){
