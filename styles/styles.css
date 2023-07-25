@@ -18,8 +18,14 @@
   font-family: 'Ubuntu Condensed', sans-serif;
   letter-spacing: 1px;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   background: var(--color-01);
+}
+#about, #skills, #projects, #contact{
+  visibility: hidden;
 }
 .content{
   padding: 20px;

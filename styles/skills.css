@@ -27,6 +27,9 @@
 .skill-img:hover{
   box-shadow: 1px 1px 20px #D0C4DF;
 }
+.skill-img{
+  visibility: hidden;
+}
 @media all and (max-width:1329px){
   .skills-container{
     max-width: 60%;

@@ -12,7 +12,6 @@
   align-items: center;
   margin: 0% 10% 0% 10%;
   padding: 15px;
-  color: #fff;
 }
 .nav-container-home{
   font-size: 25pt;
@@ -27,6 +26,7 @@
 .nav-container-menu-item{
   font-size: 20pt;
   font-weight: lighter;
+  color: var(--color-06);; 
 }
 .nav-container-menu-item:hover{
   color: var(--color-03);
