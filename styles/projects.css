@@ -78,6 +78,7 @@
   align-items: center;
   cursor: pointer;
   gap: 5px;
+  text-decoration: none;
 }
 .project-link:hover{
   color: var(--color-03);
@@ -85,7 +86,6 @@
 .github-link{
   font-size: 1.2rem;
   font-weight: 500;
-  text-decoration: none;
 }
 .project-animation-right, .project-animation-left{
   visibility: hidden;
