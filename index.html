@@ -18,12 +18,12 @@
   <header id="navbar">
     <div class="nav-container">
       <div class="nav-navbar-container">
-        <a class="nav-container-home highlighted-text">LuisFs</a>
+        <a class="nav-container-home highlighted-text">Luis</a>
         <nav class="nav-container-menu">
-          <a class="nav-container-menu-item" href="#about">Sobre</a>
-          <a class="nav-container-menu-item" href="#skills">Habilidades</a>
-          <a class="nav-container-menu-item" href="#projects">Projetos</a>
-          <a class="nav-container-menu-item" href="#contact">Contato</a>
+          <span class="nav-container-menu-item" onclick="scrollToElement('about')">Sobre</span>
+          <span class="nav-container-menu-item" onclick="scrollToElement('skills')">Habilidades</span>
+          <span class="nav-container-menu-item" onclick="scrollToElement('projects')">Projetos</span>
+          <span class="nav-container-menu-item" onclick="scrollToElement('contact')">Contato</span>
         </nav>
         <div class="nav-mobile-menu-icon">
           <button onclick="mobileMenu()"><i class="fa-solid fa-bars"></i></button>
@@ -31,10 +31,10 @@
       </div>
       <div class="nav-mobile-menu">
         <div class="nav-mobile-menu-list">
-          <a class="nav-container-menu-item" href="#about">Sobre</a>
-          <a class="nav-container-menu-item" href="#skills">Habilidades</a>
-          <a class="nav-container-menu-item" href="#projects">Projetos</a>
-          <a class="nav-container-menu-item" href="#contact">Contato</a>
+          <span class="nav-container-menu-item" onclick="scrollToElement('about')">Sobre</span>
+          <span class="nav-container-menu-item" onclick="scrollToElement('skills')">Habilidades</span>
+          <span class="nav-container-menu-item" onclick="scrollToElement('projects')">Projetos</span>
+          <span class="nav-container-menu-item" onclick="scrollToElement('contact')">Contato</span>
         </div>
       </div>
     </div>
@@ -46,7 +46,7 @@
           <h3 id="home-info-itens-1" class="home-info-itens">Olá,</h3>
           <h3 id="home-info-itens-2" class="home-info-itens">Meu nome é <span id="home-info-itens-3" class='highlighted-text'>Luis Fernando</span></h3>
           <h3 id="home-info-itens-4" class="home-info-itens">Software Developer</h3>
-          <a class="home-contact-btn" href="/#contact">Contato</a>
+          <span class="home-contact-btn" onclick="scrollToElement('contact')">Contato</span>
         </div>
         <img class="home-image" src="./assets/programmer.svg" alt="imagem inicial"/>
       </div>
@@ -147,7 +147,9 @@
                     <span class="badge-item">CSS</span>
                     <span class="badge-item">JavaScript</span>
                   </div>
-                  <a class="project-link"><span class="github-link">Github</span><i class="fa-solid fa-up-right-from-square"></i></a>
+                  <a href="https://github.com/luissavighago/Portifolio" target="_blank" class="project-link">
+                    <span class="github-link">Github</span><i class="fa-solid fa-up-right-from-square"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -162,7 +164,9 @@
                     <span class="badge-item">CSS</span>
                     <span class="badge-item">JavaScript</span>
                   </div>
-                  <a class="project-link"><span class="github-link">Github</span><i class="fa-solid fa-up-right-from-square"></i></a>
+                  <a class="project-link" href="https://github.com/luissavighago/Gerador-de-descricoes" target="_blank">
+                    <span class="github-link">Github</span><i class="fa-solid fa-up-right-from-square"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -196,7 +200,7 @@
         </div>
       </div>
       <div class="back-to-top-container content-style2">
-        <a class="back-to-top" href="#home">
+        <a class="back-to-top" onclick="scrollToElement('home')">
           <i class="fa fa-arrow-up"></i>
         </a>
       </div>
@@ -205,10 +209,10 @@
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-links">
-        <a><i class="fa-brands fa-github fa-lg"></i></a>
-        <a><i class="fa-brands fa-linkedin fa-lg"></i></a>
-        <a><i class="fa-brands fa-instagram fa-lg"></i></a>
-        <a><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+        <a href="https://github.com/luissavighago" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
+        <a href="https://www.linkedin.com/in/luis-savighago-693aa3192" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+        <a href="https://www.instagram.com/luis_savighago" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
+        <a href="https://wa.me/5546984024204" target="_blank"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
       </div>
       <span>©2023 Copyright, Luis F. Savighago.</span>
     </div>

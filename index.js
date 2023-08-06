@@ -1,11 +1,29 @@
+const getMobileMenu = () => {
+  return document.querySelector(".nav-mobile-menu")
+}
+
+const mobileMenuIsActive = (menu) => {
+  return menu.classList.contains("open")
+}
+
+const disableMobileMenu = (menu) => {
+  menu.classList.remove("open");
+}
+
+const enableMobileMenu = (menu) => {
+  menu.classList.add("open");
+}
+
 //menu responsivo
 const mobileMenu = () => {
-  let menu = document.querySelector(".nav-mobile-menu")
-  if(menu.classList.contains("open")){
-    menu.classList.remove("open");
-  }else{
-    menu.classList.add("open");
-  }
+  let menu = getMobileMenu();
+  mobileMenuIsActive(menu) ? disableMobileMenu(menu) : enableMobileMenu(menu)
+}
+
+const scrollToElement = (elementId) => {
+  disableMobileMenu(getMobileMenu())
+  const element = document.getElementById(elementId);
+  element.scrollIntoView({ behavior: 'smooth' });
 }
 
 //animações onScroll
@@ -21,8 +39,8 @@ sr.reveal('#skills',{duration: 1000});
 sr.reveal('.skill-img',{origin: 'bottom',distance: '100px',rotate: {x:80, y:80,z:0},duration:1000,delay:500});
 
 sr.reveal('#projects',{duration: 1000});
-sr.reveal('.project-animation-right',{origin: 'right',distance: '100px',duration: 1000,delay:500});
-sr.reveal('.project-animation-left',{origin: 'left',distance: '100px',duration: 1000,delay:500});
+sr.reveal('.project-animation-right',{origin: 'bottom',distance: '100px',duration: 1000,delay:500});
+sr.reveal('.project-animation-left',{origin: 'bottom',distance: '100px',duration: 1000,delay:500});
 
 sr.reveal('#contact',{duration: 1000});
-sr.reveal('.form-contact',{origin: 'right',distance: '100px',duration: 1000,delay:500});
+sr.reveal('.form-contact',{origin: 'bottom',distance: '100px',duration: 1000,delay:500});

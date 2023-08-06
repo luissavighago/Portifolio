@@ -31,12 +31,12 @@
   box-shadow: 0 0 40px 40px var(--color-07) inset, 0 0 0 0 var(--color-07);
 }
 .home-contact-btn:hover {
-  box-shadow: 0 0 10px 0 var(--color-07) inset, 0 0 10px 4px var(--color-07);
+  box-shadow: 0 0 5px 0 var(--color-07) inset, 0 0 5px 4px var(--color-07);
   color: #fff;
 }
 .home-contact-btn:active {
   background-color: var(--color-02);
-  box-shadow: 0 0 10px 0 var(--color-04) inset, 0 0 10px 4px var(--color-04);
+  box-shadow: 0 0 5px 0 var(--color-04) inset, 0 0 5px 4px var(--color-04);
 }
 #home-info-itens-1, #home-info-itens-2, #home-info-itens-3, #home-info-itens-4{
   visibility: hidden;

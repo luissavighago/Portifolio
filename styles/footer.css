@@ -31,3 +31,9 @@
   background-color: var(--color-05);
   box-shadow: 0 0 30px var(--color-04);
 }
+
+@media all and (max-width:300px){
+  .footer-links{
+    gap: 10px;
+  }
+}
