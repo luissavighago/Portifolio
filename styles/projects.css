@@ -79,6 +79,7 @@
   cursor: pointer;
   gap: 5px;
   text-decoration: none;
+  color: var(--color-02);
 }
 .project-link:hover{
   color: var(--color-03);
