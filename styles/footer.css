@@ -31,9 +31,6 @@
   background-color: var(--color-05);
   box-shadow: 0 0 30px var(--color-04);
 }
-.footer-links i img{
-  width: 1.5rem;
-}
 
 @media all and (max-width:300px){
   .footer-links{

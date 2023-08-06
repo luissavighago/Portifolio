@@ -37,9 +37,6 @@
 .nav-mobile-menu-icon{
   display: none;
 }
-.nav-mobile-menu-icon img{
-  width: 3rem;
-}
 .nav-mobile-menu:disabled{
   -webkit-animation: scale-down-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   animation: scale-down-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;

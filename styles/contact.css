@@ -81,24 +81,26 @@
   right: 20px;
   width: 50px;
   height: 50px;
-  background-color: var(--color-01);
+  background-color: transparent;
+  color: var(--color-07);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 24px;
   cursor: pointer;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  box-shadow: 0 0 40px 40px var(--color-01) inset, 0 0 0 0 var(--color-01);
 }
 .back-to-top:hover {
-  background-color: var(--color-02);
-  box-shadow: 0 0 30px var(--color-04);
+  background-color: transparent;
+  color: var(--color-01);
+  box-shadow: 0 0 5px 0 var(--color-01) inset, 0 0 5px 4px var(--color-01);
 }
 .back-to-top:active {
-  background-color: var(--color-03);
-  box-shadow: 0 0 30px var(--color-04);
-}
-.back-to-top img{
-  width: 2rem;
+  background-color: var(--color-05);
+  box-shadow: 0 0 5px 0 var(--color-04) inset, 0 0 5px 4px var(--color-04);
 }
 .form-contact{
   visibility: hidden;
